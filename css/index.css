@@ -215,16 +215,118 @@ header nav a:hover {
   text-decoration: underline;
 }
 .container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 .container .aSide {
-  width: 60%;
-}
-.container .bside {
+  width: 65%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.container .bSide {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: flex-end;
+}
+.container .wordBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 3%;
+  margin-bottom: 5%;
+  width: 90%;
+  padding-top: 5%;
+}
+.container .wordBox h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.container .wordBox p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+.container .wordBox button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100px;
+  height: 25px;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  text-decoration: none;
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+.container .wordBox button:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer #contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 60%;
+  margin-left: 3%;
+}
+footer #contact h3 {
+  font-size: 4rem;
+  margin-bottom: 3%;
+}
+footer #contact p {
+  font-size: 1.4rem;
+  width: 100%;
+  margin-bottom: 5%;
+}
+footer #contact form label {
+  font-size: 1.6rem;
+}
+footer #contact form input {
+  width: 80%;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #c0c0c0;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  outline: none;
+}
+footer #contact form input:focus {
+  border: 1px dotted #c0c0c0;
+}
+footer #contact form textarea {
+  width: 80%;
+  height: 20rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  box-sizing: border-box;
+  border: 1px solid #c0c0c0;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  outline: none;
+}
+footer img {
   width: 40%;
 }
