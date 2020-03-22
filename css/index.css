@@ -1,3 +1,30 @@
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.links {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.links:hover {
+  color: #696969;
+  text-decoration: overline;
+  text-decoration: underline;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -120,4 +147,84 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  max-width: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+h1,
+h3 {
+  font-family: 'Liu Jian Mao Cao', cursive;
+  color: #c0c0c0;
+}
+h2,
+h4,
+h5 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  color: #c0c0c0;
+}
+header {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  border-bottom: 2px solid #696969;
+  margin: 2rem auto;
+}
+header h1 {
+  width: 100%;
+  font-size: 6rem;
+  margin-bottom: 2rem;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+header nav a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+header nav a:hover {
+  color: #696969;
+  text-decoration: overline;
+  text-decoration: underline;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.container .aSide {
+  width: 60%;
+}
+.container .bside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 40%;
 }
