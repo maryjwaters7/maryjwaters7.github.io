@@ -172,9 +172,7 @@ h3 {
 h2,
 h4,
 h5 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-style: italic;
+  font-family: 'Liu Jian Mao Cao', cursive;
   color: #c0c0c0;
 }
 header {
@@ -227,12 +225,70 @@ header nav a:hover {
   justify-content: space-between;
   align-items: flex-start;
 }
+.container .aSide #contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-left: 3%;
+}
+.container .aSide #contact h3 {
+  font-size: 4rem;
+  margin-bottom: 3%;
+}
+.container .aSide #contact p {
+  font-size: 1.4rem;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.container .aSide #contact form label {
+  font-size: 1.6rem;
+}
+.container .aSide #contact form input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #c0c0c0;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  outline: none;
+}
+.container .aSide #contact form input:focus {
+  border: 1px dotted #c0c0c0;
+}
+.container .aSide #contact form textarea {
+  width: 100%;
+  height: 20rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  box-sizing: border-box;
+  border: 1px solid #c0c0c0;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  outline: none;
+}
 .container .bSide {
   width: 35%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
+}
+.container .bSide .jellyb {
+  margin-top: 13rem;
+}
+.container .bSide .jellyc {
+  margin-top: 5rem;
+}
+.container .bSide .jellyd {
+  margin-top: 12rem;
 }
 .container .wordBox {
   display: flex;
@@ -244,7 +300,7 @@ header nav a:hover {
   padding-top: 5%;
 }
 .container .wordBox h2 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin-bottom: 1rem;
 }
 .container .wordBox p {
@@ -274,59 +330,36 @@ header nav a:hover {
 }
 footer {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
 }
-footer #contact {
+footer .slinks {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2rem;
+  color: #c0c0c0;
+  margin: 3% auto;
+}
+footer h4 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-bottom: 2%;
+}
+.portContain {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 60%;
-  margin-left: 3%;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 15%;
 }
-footer #contact h3 {
-  font-size: 4rem;
-  margin-bottom: 3%;
+.portContain h2 {
+  font-size: 6rem;
+  margin: 3% 0 5% 0;
 }
-footer #contact p {
-  font-size: 1.4rem;
-  width: 100%;
-  margin-bottom: 5%;
-}
-footer #contact form label {
-  font-size: 1.6rem;
-}
-footer #contact form input {
-  width: 80%;
-  padding: 0.5rem 1rem;
-  margin: 1rem 0;
-  box-sizing: border-box;
-  border-bottom: 1px solid #c0c0c0;
-  background-color: #000000;
-  color: #FFFFFF;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 1.5rem;
-  outline: none;
-}
-footer #contact form input:focus {
-  border: 1px dotted #c0c0c0;
-}
-footer #contact form textarea {
-  width: 80%;
-  height: 20rem;
-  padding: 0.5rem 1rem;
-  margin: 1rem 0;
-  box-sizing: border-box;
-  border: 1px solid #c0c0c0;
-  background-color: #000000;
-  color: #FFFFFF;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 1.5rem;
-  outline: none;
-}
-footer img {
-  width: 40%;
+.portContain p {
+  font-size: 2rem;
 }

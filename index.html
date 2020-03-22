@@ -8,6 +8,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Raleway:300,700i&display=swap" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/61edbc8bf9.js" crossorigin="anonymous"></script>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -22,7 +23,7 @@
     <nav><!--Parent to Navigation Links-->
 
       <a href="index.html">Home</a>
-      <a href="#portfolio">Portfolio</a>
+      <a href="portfolio.html">Portfolio</a>
       <a href="#about">About Me</a>
       <a href="#contact">Contact</a>
 
@@ -40,15 +41,31 @@
       <div class="wordBox">
         <h2>Portfolio</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, reiciendis eos explicabo quis commodi quo harum perspiciatis est consectetur vel unde tempora numquam cum quas dolores earum perferendis eveniet ab? Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repellat laborum et illum dolores explicabo possimus, voluptatem totam quia, rerum amet esse consectetur laboriosam vel earum quos ex neque at.</p>
-        <button>See More</button>
+        <a href="portfolio.html">
+          <button id="portfolio">See More</button> </a>
+        
 	  </div><!--closes wordBox-->
 	  
 	  <div class="wordBox">
         <h2>About Me</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, reiciendis eos explicabo quis commodi quo harum perspiciatis est consectetur vel unde tempora numquam cum quas dolores earum perferendis eveniet ab? Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repellat laborum et illum dolores explicabo possimus, voluptatem totam quia, rerum amet esse consectetur laboriosam vel earum quos ex neque at.</p>
-        <button>See More</button>
+        <a href="#">
+        <button id="about">See More</button></a>
 	  </div><!--closes wordBox-->
-
+    <div id="contact">
+      <h3>Contact Information</h3>
+      <p>Please use the form below to send me an email with any questions, comments or ideas. Thank you!</p>
+  
+      <form action="">
+        <label for="name">Your Name</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Your Email</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <textarea name="message" placeholder="Comments or Questions?"></textarea><br>
+        <input type="submit" value="Submit">
+  
+      </form>
+    </div>
     </section><!--closes aSide-->
 
     <section class="bSide"><!--parent of column b-->
@@ -57,7 +74,11 @@
 
       <img class="jellyc" src="img/jelly3t.png" alt="photograph of a jellyfish">
 
+      <img class="jellyd" src="img/jelly4t.png" alt="photograph of a jellyfish">
+
     </section><!--closes bSide-->
+
+   
 
   </div><!--closes container-->
 </main>
@@ -65,24 +86,18 @@
 
 <footer>
 
-	<div id="contact">
-		<h3>Contact Information</h3>
-		<p>Please use the form below to send me an email with any questions, comments or ideas. Thank you!</p>
+  <div class="slinks">
+    <i class="fab fa-github"></i>
+    <i class="fab fa-linkedin-in"></i>
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-twitter"></i>
 
-		<form action="">
-		  <label for="name">Your Name</label><br>
-		  <input type="text" id="name" name="name"><br>
-		  <label for="email">Your Email</label><br>
-		  <input type="text" id="lname" name="lname"><br>
-		  <textarea name="message" placeholder="Comments or Questions?"></textarea><br>
-		  <input type="submit" value="Submit">
+  </div>
 
-		</form>
-	</div>
-
-	<img class="jellyd" src="img/jelly4t.png" alt="black and white photograph of a jellyfish">
-
+  <h4>Copyright 2020</h4>
+  
 </footer>
 
+   
 </body>
 </html>
