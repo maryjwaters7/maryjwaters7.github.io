@@ -28,3 +28,25 @@
         text-decoration: underline;
     }
 }//closes links
+
+.customBtn(@width, @height, @btncolor, @btntext){
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    width:@width;
+    height:@height;
+    background-color:@btncolor;
+    color:@btntext;
+    font-family:@fontFamBody;
+    font-weight:700;
+    font-style:italic;
+    text-decoration:none;
+    border:1px solid @silver;
+    border-radius:5px;
+
+    &:hover{
+        background-color:@btntext;
+        color:@btncolor;
+    }
+}

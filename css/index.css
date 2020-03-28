@@ -170,11 +170,8 @@ h3 {
   color: #c0c0c0;
 }
 h2,
-h4,
-h5 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-style: italic;
+h4 {
+  font-family: 'Liu Jian Mao Cao', cursive;
   color: #c0c0c0;
 }
 header {
@@ -215,16 +212,208 @@ header nav a:hover {
   text-decoration: underline;
 }
 .container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 .container .aSide {
-  width: 60%;
-}
-.container .bside {
+  width: 65%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.container .aSide #contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-left: 3%;
+}
+.container .aSide #contact h3 {
+  font-size: 4rem;
+  margin-bottom: 3%;
+}
+.container .aSide #contact p {
+  font-size: 1.4rem;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.container .aSide #contact form label {
+  font-size: 1.6rem;
+}
+.container .aSide #contact form input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #c0c0c0;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  outline: none;
+}
+.container .aSide #contact form input:focus {
+  border: 1px dotted #c0c0c0;
+}
+.container .aSide #contact form textarea {
+  width: 100%;
+  height: 20rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  box-sizing: border-box;
+  border: 1px solid #c0c0c0;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  outline: none;
+}
+.container .bSide {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: flex-end;
-  width: 40%;
+}
+.container .bSide .jellyb {
+  margin-top: 13rem;
+}
+.container .bSide .jellyc {
+  margin-top: 5rem;
+}
+.container .bSide .jellyd {
+  margin-top: 12rem;
+}
+.container .wordBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 3%;
+  margin-bottom: 5%;
+  width: 90%;
+  padding-top: 5%;
+}
+.container .wordBox h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+.container .wordBox p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+.container .wordBox a {
+  text-decoration: none;
+}
+.container .wordBox a button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100px;
+  height: 25px;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  text-decoration: none;
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+.container .wordBox a button:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+footer {
+  width: 100%;
+}
+footer .slinks {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2rem;
+  color: #c0c0c0;
+  margin: 3% auto;
+}
+footer h4 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-bottom: 2%;
+}
+.portTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  border-bottom: 2px solid #696969;
+  width: 95%;
+  padding-bottom: 2%;
+  margin: 2% 2.5% 2% 2.5%;
+}
+.portTitle h2 {
+  font-family: 'Liu Jian Mao Cao', cursive;
+  font-size: 8rem;
+  color: #c0c0c0;
+  margin-bottom: 2%;
+}
+.portTitle p {
+  font-size: 2rem;
+  color: #c0c0c0;
+}
+.portMain {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.portMain .rowLeft {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #696969;
+  padding-bottom: 2%;
+  margin-bottom: 2%;
+}
+.portMain .rowLeft img {
+  width: 47%;
+}
+.portMain .rowLeft p {
+  width: 48%;
+  font-size: 1.5rem;
+  color: #c0c0c0;
+  text-align: justify;
+}
+.portMain .rowRight {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #696969;
+  padding-bottom: 2%;
+  margin-bottom: 2%;
+}
+.portMain .rowRight img {
+  width: 47%;
+}
+.portMain .rowRight p {
+  width: 48%;
+  font-size: 1.5rem;
+  color: #c0c0c0;
+  text-align: justify;
 }

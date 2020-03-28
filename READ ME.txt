@@ -1,0 +1,6 @@
+This is just an experimental portfolio webiste to learn and grow with as I progress as a student at Lambda.
+
+************Projects for Portfolio************
+
+1) https://maryjwaters7.github.io/Sprint-Challenge--User-Interface/
+    -First Sprint Challenge Project.

@@ -1,0 +1,68 @@
+.portTitle{
+    .flexColumn();
+    border-bottom:2px solid @dimgray;
+    width:95%;
+    padding-bottom:2%;
+    margin:2% 2.5% 2% 2.5%;
+
+    h2{
+        font-family:@fontFamHead;
+        font-size:8rem;
+        color:@silver;
+        margin-bottom:2%;
+    }//closes h2
+
+    p{
+        font-size:2rem;
+        color:@silver;
+    }//closes p
+
+}//closes portTitle
+
+.portMain{
+    width:95%;
+    margin:0 auto;
+    .flexColumn();
+    .rowLeft{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        width:100%;
+        border-bottom:2px solid @dimgray;
+        padding-bottom:2%;
+        margin-bottom:2%;
+
+        img{
+            width:47%;
+        }//closes img
+
+        p{
+            width:48%;
+            font-size: 1.5rem;
+            color: @silver;
+            text-align:justify;
+        }
+    }//closes rowLeft
+
+    .rowRight{
+        display:flex;
+        flex-direction:row-reverse;
+        justify-content:space-between;
+        align-items:center;
+        width:100%;
+        border-bottom:2px solid @dimgray;
+        padding-bottom:2%;
+        margin-bottom:2%;
+
+        img{
+            width:47%;
+        }//closes img
+
+        p{
+            width:48%;
+            font-size: 1.5rem;
+            color: @silver;
+            text-align:justify;
+        }
+    }//closes rowRight
+}//closes portMain
