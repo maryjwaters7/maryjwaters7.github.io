@@ -6,7 +6,7 @@
 
   <title>..: Mary Jett Waters // Future Full-Stack Web Developer :..</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Raleway:300,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Roboto&display=swap" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/61edbc8bf9.js" crossorigin="anonymous"></script>
 
@@ -16,46 +16,62 @@
 </head>
 
 <body>
-  <header><!--Parent to Navigation Bar-->
-
-    <h1>Mary Jett Cole Waters</h1>
-
-    <nav><!--Parent to Navigation Links-->
-
-      <a href="index.html">Home</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="#about">About Me</a>
-      <a href="#contact">Contact</a>
-
-    </nav>
-  </header>
 
 
-<main>
-  <div class="container"><!--Parent of middle section columns-->
+<main><!--Flex Parent to the containers-->
 
-	<section class="aSide"><!--parent of column a-->
-		
-      <img class="jellya" src="img/jelly1t.png" alt="black and white photograph of a jellyfish">
+  <section class="leftContainer"><!--Flex Parent to the Scrolling content on the Left-->
+    <img src="img/banner1.png" alt="Photograph of a wave breaking near the shore">
 
-      <div class="wordBox">
-        <h2>Portfolio</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, reiciendis eos explicabo quis commodi quo harum perspiciatis est consectetur vel unde tempora numquam cum quas dolores earum perferendis eveniet ab? Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repellat laborum et illum dolores explicabo possimus, voluptatem totam quia, rerum amet esse consectetur laboriosam vel earum quos ex neque at.</p>
-        <a href="portfolio.html">
-          <button id="portfolio">See More</button> </a>
+    <div id="about">
+      <h3>A little about me...</h3>
+      <p>Hey there - my name is Mary Jett and I am an aspiring Web Developer and Lambda School student from the mid-atlantic coastal region of the United States. As you can probably already tell from the theme of the design for my site I am a lover of the the beach and ocean. Born and raised in coastal Virginia I often say I have saltwater in my veins so when the warmer months roll around if I'm not on my laptop you can usually find me in the water on a surfboard. </p>
+      <p>I have always really enjoyed learning really just about anything, Academics was something that came naturally to me and I was identified as gifted as a child and attended The Old Donation Center School for the Gifted and Talented for academics up until high school. I graduated High School from Frank W Cox High School in 2006 and attended a few classes at Tidewater Community College before putting that all on hold to be a Mom and raise two beautiful kids. Now that my kids are entering high school and middle school themelves I decided it was time for me to pursue an education in something I wanted to do for myself and give myself a new purpose and drive in life. </p>
+      <p>Web Development was an easy choice for me...I taught myself HTML and CSS waaaaaaay back in the dial-up days just for fun and have always had a knack for technology. Im the goto person in my group of friends for trying to get anything connected or set up and working right. Lambda School's innovative and career-focused and driven education model peaked my interest from jump. After researching the numbers and looking at the curriculums offered I knew I was making the right choice to kickstart my journey to becoming a coding master. </p>
+
+    </div>
+
+    <div id="portfolio">
+
+      <h3>Some of the things I can do...</h3>
+
+      <div class="table">
         
-	  </div><!--closes wordBox-->
-	  
-	  <div class="wordBox">
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, reiciendis eos explicabo quis commodi quo harum perspiciatis est consectetur vel unde tempora numquam cum quas dolores earum perferendis eveniet ab? Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repellat laborum et illum dolores explicabo possimus, voluptatem totam quia, rerum amet esse consectetur laboriosam vel earum quos ex neque at.</p>
-        <a href="#">
-        <button id="about">See More</button></a>
-	  </div><!--closes wordBox-->
+        <div class="cell">
+          <p class="icon"><i class="fab fa-html5"></i></p>
+          <p class="tabletext">- HTML5 - The structure and content of any website written from the first line on down. Whatever you envision can be made from scratch for a truley unique site. No templates used where your content is simply filled into the blanks on sites used a 1000 times over.</p></div>
+        <div class="cell">
+          <p class="icon"><i class="fab fa-css3-alt"></i></p>
+          <p class="tabletext">- CSS3 - Where HTML is the structure and content of a webpage, CSS is the styling used to amke it responsive and beautiful. Using preprocessors like LESS and/or SASS any site or project can be uniquley styled any way imaginable.</p></div>
+        <div class="cell">      
+          <p class="icon"><i class="fab fa-js-square"></i></p>
+          <p class="tabletext">- JavaScript - In sticking with the house analogy, JavaScript is the electricty and utilities that bring your house to life. These three "languages" work in harmony to bring together fully dynamic, responsive, and accessible designs that are functional, unique and beautiful.</p></div> 
+        <div class="cell">      
+          <p class="icon"> <i class="fab fa-adobe"></i></p>
+          <p class="tabletext">Have an idea but unsure of where to go with it design wise? or maybe just a general concept that you need brought to digital life? With my experience using Adobe CC's vast library of applications and design tools, I can work the design from concept to reality... or lend my skills to a team to collaborate on a design together. </p></div> 
+        <div class="cell">     
+          <p class="icon"><i class="fas fa-code-branch"></i></p>
+          <p class="tabletext">Whether designing for an individual or working as part of a large team on a big design, knowing how to navigate the right tools used in the technology world today is nearly as important as knowing how to write the code. Working with a team to write and/or debug code commits through GitHub and effectively using communication tools like Slack and Zoom are inportant skills that I am mastering at Lmabda.</p></div> 
+        <div class="cell">       
+          <p class="icon"><i class="fas fa-lightbulb"></i></p>
+          <p class="tabletext">Knowledge is power and I love learning. With the strong foundation of skills I have built as a student with Lambda and on my own just as a curious lover of learning and technology I am confident I can quickly learn any skills needed and adapt to any Web Development enviroment.</p></div> 
+
+      </div><!--Closes table div-->
+       
+      <p>Please click the link below to view my online portfolio of projects I have completed either individually or as a team with other Lambda students.</p>
+      <a href="portfolio.html"><button>Projects</button></a>
+
+    </div><!--closes portfolio div-->
+
+    <div id="resume">
+      <h3>A link to my online resume...</h3>
+      <p>My diverse background has given me the opportunity to develop other important skillsets and soft-skills such as an excellent problem-solving and critical thinking ability, effective communication and teamwork skills, and management skills such as scheduling and time-managment as well as employee training and supervision. Click the link below to see an online version of my professional resume or fill out the <a href ="#contact"> Contact Form </a>down below to get in touch.</p>
+      <a href="resume.html"><button>Resume</button></a>
+    </div><!--closes resume div-->
+
     <div id="contact">
-      <h3>Contact Information</h3>
-      <p>Please use the form below to send me an email with any questions, comments or ideas. Thank you!</p>
-  
+      <h3>Get in touch....</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, temporibus modi. Eos, labore dicta! Ut, eum minus quae ipsa nulla consequuntur obcaecati, harum enim sequi facilis debitis repellendus aliquam deleniti?</p>
       <form action="">
         <label for="name">Your Name</label><br>
         <input type="text" id="name" name="name"><br>
@@ -63,40 +79,49 @@
         <input type="text" id="lname" name="lname"><br>
         <textarea name="message" placeholder="Comments or Questions?"></textarea><br>
         <input type="submit" value="Submit">
+        </form>
+    </div><!--closes contact div-->
+
+
+    <h4>Copyright 2020</h4>
+    
+  </section>
+
+  <section class="rightContainer"><!--Flex Parent to the fixed nav bar on the right-->
   
-      </form>
-    </div>
-    </section><!--closes aSide-->
+  <img src="img/me.png" alt="circular photograph of myself wearing glasses">
+  <h1>Mary Jett Waters</h1>
+  <h2>Current Lambda School Student</h2>
+  <h2>Future Full-Stack Web Developer</h2>
+  
+    <nav><!--Parent to Navigation Links-->
 
-    <section class="bSide"><!--parent of column b-->
+    <a href="#about">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="resume.html">Resume</a>
+    <a href="#contact">Contact</a>
 
-      <img class="jellyb" src="img/jelly2t.png" alt="photograph of a jellyfish">
+  </nav>
 
-      <img class="jellyc" src="img/jelly3t.png" alt="photograph of a jellyfish">
+  <div class="slinks">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#"> <i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+  </div>
 
-      <!--<img class="jellyd" src="img/jelly4t.png" alt="photograph of a jellyfish">-->
-
-    </section><!--closes bSide-->
-
-   
-
-  </div><!--closes container-->
+</section>
+  
 </main>
 
 
-<footer>
+<!--<footer>
 
-  <div class="slinks">
-    <i class="fab fa-github"></i>
-    <i class="fab fa-linkedin-in"></i>
-    <i class="fab fa-facebook"></i>
-    <i class="fab fa-twitter"></i>
-
-  </div>
+  
 
   <h4>Copyright 2020</h4>
   
-</footer>
+</footer>-->
 
    
 </body>

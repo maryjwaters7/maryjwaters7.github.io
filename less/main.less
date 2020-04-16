@@ -1,164 +1,136 @@
-.container {
-    width:100%;
-    display:flex;
+main{
+    display: flex;
     justify-content:space-between;
-    align-items:flex-start;
+    width:100%;
+}//closes main
 
-    .aSide{
-        width:65%;
-        display:flex;
-        flex-direction:column;
-        justify-content:space-between;
-        align-items:flex-start;
-
-        #contact{
-            display:flex;
-            flex-direction:column;
-            justify-content:space-evenly;
-            width:100%;
-            margin-left:3%;
+.leftContainer{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    width:75%;
+    img{
+        width:100%;
+        margin-bottom:4 rem
+    }//closes img
     
-            h3{
-                font-size:4rem;
-                margin-bottom:3%;
-            }//closes h3
-    
-            p{
-                font-size:1.4rem;
-                width:100%;
-                margin-bottom:5%;
-            }//closes p
-    
-            //form styling here
-            form{
-    
-                label{
-                    font-size:1.6rem;
-                }//closes label
-    
-                input{
-                  width:100%; 
-                  padding:0.5rem 1rem;
-                  margin:1rem 0;
-                  box-sizing:border-box;
-                  border-bottom:1px solid @silver;
-                  background-color:@black;
-                  color:@white;
-                  font-family:@fontFamBody;
-                  font-weight:300;
-                  font-size:1.5rem;
-                  outline:none;
-                  &:focus{
-                      border:1px dotted @silver;
-                  }//closes focus
-                }//closes input
-    
-                textarea{
-                    
-                        width:100%; 
-                        height:20rem;
-                        padding:0.5rem 1rem;
-                        margin:1rem 0;
-                        box-sizing:border-box;
-                        border:1px solid @silver;
-                        background-color:@black;
-                        color:@white;
-                        font-family:@fontFamBody;
-                        font-weight:300;
-                        font-size:1.5rem;
-                        outline:none;
-                }//closes textarea
-                 
-            }//closes form
-    
-    
-        }//closes contact
+    #about{
+        .flexColumn();
+        width:100%;
+        margin:0 auto;
+        border-bottom: 2px solid @accentDark;
 
-    }//closes aSide
-
-    .bSide{
-        width:35%;
-        display:flex;
-        flex-direction:column;
-        justify-content:flex-start;
-        align-items:flex-end;
-
-        .jellyb{
-            margin-top:13rem;
-        }
-
-        .jellyc{
-            margin-top:5rem;
-        }
-
-        .jellyd{
-            margin-top:12rem;
-        }
-
-    }//closes bSide
-
-    .wordBox {
-        display:flex;
-        flex-direction:column;
-        justify-content:space-evenly;
-        margin-left:3%;
-        margin-bottom:5%;
-        width:90%;
-        padding-top:5%;
-
-        h2{
-            font-size:3.5rem;
-            margin-bottom:1rem;
-
-        }//closes h2
+        h3{
+            font-size:8rem;
+            margin-top:3rem;
+        }//closes h3
 
         p{
-            font-size:1.4rem;
-            margin-bottom:2rem;
+            font-size: 2rem;
+            margin: 2rem;
+        }
+    }//closes about
+
+    #portfolio{
+        .flexColumn();
+        width:100%;
+        margin:0 auto;
+        border-bottom: 2px solid @accentDark;
+
+        h3{
+            font-size:9rem;
+            margin-top:3rem;
+        }//closes h3
+
+        .table{
+            width: 100%;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:space-evenly;
+            align-items:center;
+            margin:0 3% 0 0;
+            text-align:center;
+
+            .cell{
+                .flexRow();
+                width:32%;
+                margin:1% auto;
+
+                .icon{
+                    color:@accentLight;
+                    width:30%;
+                    font-size: 8rem;
+                }//closes icon
+
+                .tabletext{
+                    width:70%;
+                    color:@accentDark;
+                    font-size:1.5rem;
+                }
+            }//closes cell
+
+        }//closes table
+
+        p{
+            font-size: 2rem;
         }//closes p
 
-        a{
-            text-decoration:none;
-        
-            button{
-                .customBtn(100px, 25px, @black, @white);
-                margin-bottom:2rem;
+        button{
+            margin-top:2rem;
+            margin-bottom:3rem;
+            .customBtn(350px, 4.5rem, @seagreen, @darkpurple);
+            font-size:2.5rem;
+            text-transform:uppercase;
+            
+        }//closes button
+    }//closes portfolio
 
-            }//closes button
-
-        }//closes a
-
-    }//closes wordBox
-
-    
-
-}//closes container
-
-footer{
-    width:100%;
-    
-    .slinks{
+    #resume{
+        .flexColumn();
         width:100%;
-        display:flex;
-        flex-direction:row;
-        justify-content:space-evenly;
-        align-items:center;
-        font-size: 2rem;
-        color:@silver;
-        margin: 3% auto;
-    }//closes slinks
-    
-    h4{
-        text-align:center;
-        font-family:@fontFamBody;
-        font-weight: 300;
-        font-size:1.3rem;
-        margin-bottom:2%;
-    
-    }//closes h4
+        border-bottom: 2px solid @accentDark;
 
-    
+        h3{
+            margin-top:3rem;
+            margin-bottom:2rem;
+            font-size:7rem
+        }//closes h3
 
-    
-}//closes footer
+        p{
+            font-size: 3rem;
+            margin-top: 2rem;
+            margin-bottom:1rem;
+        }//closes p
+
+        button{
+            margin-top:2rem;
+            margin-bottom:3rem;
+            .customBtn(350px, 4.5rem, @seagreen, @darkpurple);
+            font-size:2.5rem;
+            text-transform:uppercase;
+            
+        }//closes button
+    }//closes resume
+
+    #contact{
+        .flexColumn();
+        width:100%;
+        margin:0 auto;
+        border-bottom: 2px solid @accentDark;
+
+        h3{
+            margin-top:3rem;
+            margin-bottom:2rem;
+            font-size:7rem
+        }//closes h3
+
+        p{
+            font-size: 3rem;
+        }//closes p
+       
+    }//closes contact
+
+}//closes left container
+
 

@@ -1,5 +1,4 @@
-This is just an experimental portfolio webiste to learn and grow with as I progress as a student at Lambda.
-
+REWORK OF PORTFOLIO WEBSITE
 ************Projects for Portfolio************
 
 1) https://maryjwaters7.github.io/Sprint-Challenge--User-Interface/
