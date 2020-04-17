@@ -1,0 +1,45 @@
+//form styling here
+form{
+    width:75%;
+    margin-top:3rem;
+    margin-bottom:3rem;
+
+    label{
+        color:@accentDark;
+        font-family:@fontFamBody;
+        text-transform:uppercase;
+        font-size:1.6rem;
+    }//closes label
+
+    input{
+      width:100%; 
+      padding:0.5rem 1rem;
+      margin:1rem 0;
+      box-sizing:border-box;
+      border-bottom:1px solid @accentDark;
+      background-color:@accentLight;
+      color:@accentDark;
+      font-family:@fontFamBody;
+      font-size:1.5rem;
+      outline:none;
+      &:focus{
+          border:1px dotted @accentLight;
+      }//closes focus
+    }//closes input
+
+    textarea{
+        
+            width:100%; 
+            height:20rem;
+            padding:0.5rem 1rem;
+            margin:1rem 0;
+            box-sizing:border-box;
+            border:1px solid @accentDark;
+            background-color:@accentLight;
+            color:@accentDark;
+            font-family:@fontFamBody;
+            font-size:1.5rem;
+            outline:none;
+    }//closes textarea
+     
+}//closes form

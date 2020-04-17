@@ -9,21 +9,15 @@
 .flexRow {
     display:flex;
     flex-direction:row;
-    justify-content:space-evenly;
+    justify-content:space-between;
     align-items:center;
     text-align:center;
 }
 
 .links {
-    font-family: @fontFamBody;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 2rem;
-    text-decoration: none;
-    color: @white;
-
+   
     &:hover {
-        color: @dimgray;
+        
         text-decoration: overline;
         text-decoration: underline;
     }
@@ -38,12 +32,9 @@
     height:@height;
     background-color:@btncolor;
     color:@btntext;
-    font-family:@fontFamBody;
-    font-weight:700;
-    font-style:italic;
     text-decoration:none;
-    border:1px solid @silver;
-    border-radius:5px;
+    border:none;
+    border-radius:1px;
 
     &:hover{
         background-color:@btntext;
